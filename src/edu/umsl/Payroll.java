@@ -50,7 +50,8 @@ Load Employee method
             System.out.println("4) save employee data to file[as a text file]");
             System.out.println("5) show all employees data ");
             System.out.println("6) edit employee data ");
-            System.out.println("7) exit");
+            System.out.println("7) Git/GitHub test 1 ");
+            System.out.println("8) exit");
             input = sc.nextInt();
 
             if (input == 0) {
@@ -68,20 +69,27 @@ Load Employee method
             } else if (input == 6) {
                 editEmployee();
             } else if (input == 7) {
+                gittest1();
+            } else if (input == 8) {
                 System.out.println("Goodbye! Thanks to Brian Lawton! You are the best!!");
             } else {
                 System.out.println("Invalid input, please try again!");
             }
 
-        } while (input != 7);
+        } while (input != 8);
     }
 
+    public void gittest1(){
+        System.out.println("Git/GitHub test 1 is working....");
+    }
+    
     public void showEmployeesBrief() {
         for (int i = 0; i < earray.length; i++) {
             System.out.println(earray[i].getID() + " " + earray[i].getFname());
         }
     }
-/*
+
+    /*
     public void checkUniqueID(int tempID) {
         boolean isUniqueID = false;
 //        do {
@@ -105,8 +113,8 @@ Load Employee method
         }
         return maxID;
     }
-*/
-    /*
+     */
+ /*
 Load Employee
 You will load back in the serialized objects from the saved file
 You should use a boolean variable that is set to true if you have loaded employees
@@ -150,7 +158,7 @@ Make sure to calculate for overtime at time and a half
             if (i != 0) {
                 checkUniqueID(id);
             }
-*/
+             */
             System.out.print("Enter first name: ");
             Fname = sc.next();
             System.out.print("Enter last name: ");
