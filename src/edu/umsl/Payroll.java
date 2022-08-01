@@ -53,7 +53,8 @@ Load Employee method
             System.out.println("7) Git/GitHub test 1 ");
             System.out.println("8) Git/GitHub test 2 ");
             System.out.println("9) Git/GitHub test 3 ");
-            System.out.println("10) exit");
+            System.out.println("10) Git/GitHub test 4 ");
+            System.out.println("11) exit");
             input = sc.nextInt();
 
             if (input == 0) {
