@@ -51,7 +51,9 @@ Load Employee method
             System.out.println("5) show all employees data ");
             System.out.println("6) edit employee data ");
             System.out.println("7) Git/GitHub test 1 ");
-            System.out.println("8) exit");
+            System.out.println("8) Git/GitHub test 2 ");
+            System.out.println("9) Git/GitHub test 3 ");
+            System.out.println("10) exit");
             input = sc.nextInt();
 
             if (input == 0) {
@@ -71,18 +73,24 @@ Load Employee method
             } else if (input == 7) {
                 gittest1();
             } else if (input == 8) {
+                gittest2();
+            } else if (input == 9) {
                 System.out.println("Goodbye! Thanks to Brian Lawton! You are the best!!");
             } else {
                 System.out.println("Invalid input, please try again!");
             }
 
-        } while (input != 8);
+        } while (input != 9);
     }
 
-    public void gittest1(){
+    public void gittest1() {
         System.out.println("Git/GitHub test 1 is working....");
     }
     
+    public void gittest2() {
+        System.out.println("Git/GitHub test 2 is working....");
+    }
+
     public void showEmployeesBrief() {
         for (int i = 0; i < earray.length; i++) {
             System.out.println(earray[i].getID() + " " + earray[i].getFname());
